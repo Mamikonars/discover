@@ -1,0 +1,210 @@
+html {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+	-webkit-box-sizing: inherit;
+	box-sizing: inherit;
+}
+
+body {
+	font-family: 'Lato', sans-serif;
+	font-size: 16px;
+	line-height: 1.5;
+	font-weight: 400;
+	color: #959595;
+	background-color: #fff;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.wrapper {
+	max-width: 1920px;
+	margin: 0 auto;
+}
+
+.container {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+/* header */
+
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo__link {
+	font-size: 27.9px;
+	padding: 16px 25px;
+	line-height: 1.2;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #59c45a;
+	display: inline-block;
+	border: 2.0px solid #b7b7b7;
+	position: relative;
+}
+
+.logo__link:after {
+	content: "travel";
+	position: absolute;
+	font-size: 18px;
+	line-height: 1.2;
+	padding: 0 15px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #59c45a;
+	background: #fff;
+	top: 85%;
+	left: 25%;
+}
+
+.header-menu__ul {
+	display: flex;
+}
+
+.header-menu__item {}
+
+.header-menu__link {
+	font-size: 18px;
+	line-height: 1.2;
+	display: inline-block;
+	padding: 56px 23px;
+	width: 100%;
+	height: 100%;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: #474747;
+	transition: background .3s;
+	-webkit-transition: background .3s;
+	-moz-transition: background .3s;
+	-ms-transition: background .3s;
+	-o-transition: background .3s;
+
+}
+
+.header-menu__link:hover {
+	background-color: #59c45a;
+	color: #fff;
+}
+
+/* header /*/
+
+/* burger */
+.btn-menu {
+	background: none;
+	border-radius: 0;
+	cursor: pointer;
+	display: none;
+	padding: 15px;
+	margin: 0 auto;
+	outline: none;
+	border: 0;
+}
+
+.btn-menu__box {
+	display: inline-block;
+	width: 40px;
+	height: 24px;
+}
+
+.btn-menu__inner::before,
+.btn-menu__inner::after,
+.btn-menu__inner {
+	background: #000;
+	width: 100%;
+	height: 4px;
+	border-radius: 5px;
+}
+
+.btn-menu__inner {
+	display: block;
+	top: 50%;
+	position: relative;
+}
+
+.btn-menu__inner::before,
+.btn-menu__inner::after {
+	content: '';
+	position: absolute;
+	left: 0;
+}
+
+.btn-menu__inner::before {
+	top: -10px;
+}
+
+.btn-menu__inner::after {
+	bottom: -10px;
+}
+
+/* burger /*/
+
+
+
+
+
+
+
+/*<<<<<<<<<<<<<< Media Query >>>>>>>>>>>> */
+
+@media screen and (max-width: 1200px) {}
+
+@media screen and (max-width: 992px) {
+	.header {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.logo__link {
+		margin: 10% 0;
+	}
+
+	.header-menu__link {
+		padding: 16px 23px;
+	}
+}
+
+@media screen and (max-width: 767px) {
+
+	.header-menu__ul {
+		display: none;
+	}
+
+	.header-menu__ul.active {
+		display: block;
+		text-align: center;
+	}
+
+	.btn-menu {
+		display: block;
+	}
+
+	.header-menu {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 576px) {}
