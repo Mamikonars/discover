@@ -51,7 +51,7 @@ img {
 	font-size: 28px;
 	line-height: 24px;
 	font-weight: 400;
-	margin: 5% auto;
+	margin: 0 auto 7%;
 	text-transform: uppercase;
 	color: #59c45a;
 	text-align: center;
@@ -316,6 +316,7 @@ img {
 
 .fav {
 	margin-bottom: 5%;
+	margin-top: 5%;
 }
 
 .fav-block {
@@ -348,6 +349,7 @@ img {
 	line-height: 25px;
 	font-weight: 700;
 	color: #3c3c3c;
+	margin: 0px 0 8%;
 }
 
 .fav-content__desc {
@@ -355,6 +357,12 @@ img {
 	line-height: 30px;
 	font-weight: 400;
 	color: #959595;
+}
+
+.service-content__icon {
+	width: 100px;
+	text-align:center;
+	align-self:center;
 }
 
 /* fav /*/
@@ -390,6 +398,7 @@ img {
 	display: flex;
 	flex-direction: column;
 	padding: 0 3%;
+	margin: 2% 0;
 }
 
 .slick-list {
